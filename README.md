@@ -49,7 +49,7 @@ Ve `"YOUR API KEY"` kısmını kendi API anahtarınızla değiştirin.
 Kod dosyasını çalıştır:
 
 ```bash
-python scriptadi.py
+python cr.py
 ```
 
 Başarılı girişler terminale yazdırılır ve `live.txt` dosyasına kaydedilir.
