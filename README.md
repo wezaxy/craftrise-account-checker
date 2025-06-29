@@ -64,3 +64,10 @@ Başarılı girişler terminale yazdırılır ve `live.txt` dosyasına kaydedili
 
 📌 Geliştirici: wezaxyy
 🛠️ Katkılar ve pull request'ler memnuniyetle karşılanır.
+🤝 Katkıda Bulunmak
+Sorunları ve geliştirme taleplerini göndermekten çekinmeyin!
+
+⭐ Destek
+Bu aracı faydalı bulursanız, lütfen GitHub'da bir yıldız verin!
+
+Discord: wezaxyy
