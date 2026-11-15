@@ -11,36 +11,71 @@
   </p>
 </div>
 
----
+🌐 Cloudflare Turnstile Bypass - Craftrise Login Checker (v2.4)
 
-## 🌟 Proje Hakkında
+Bu proje, Cloudflare Turnstile (Invisible) koruması bulunan web sitelerinde (örnek: craftrise.com.tr) oturum açma testleri yapmak için geliştirilmiş konsol tabanlı bir araçtır. combo.txt içerisindeki kullanıcı adı ve şifre kombinasyonlarını sırasıyla dener ve geçerli olanları otomatik olarak live.txt dosyasına kaydeder.
 
-**Craftrise Enterprise Checker**, web tabanlı kimlik doğrulama sistemlerinin stres testlerini gerçekleştirmek, güvenlik zafiyetlerini analiz etmek ve Cloudflare Turnstile (Invisible) korumalarını simüle etmek için geliştirilmiş üst düzey bir otomasyon aracıdır. 
+🚀 Özellikler
 
-Gelişmiş RapidAPI entegrasyonu sayesinde en sert korumaları bile saniyeler içinde aşarak yüksek başarı oranıyla veri doğrulaması yapar.
+Otomatik API Key Yönetimi (config.json): API anahtarınızı yalnızca ilk çalıştırıldığında bir kez girersiniz; program bunu otomatik olarak kaydeder ve sonraki açılışlarda tekrar sormaz.
 
----
+API Key Doğrulama: Girilen veya kayıtlı olan RapidAPI anahtarının geçerliliği başlangıçta otomatik olarak test edilir.
 
-## ✨ Öne Çıkan Mimari Özellikler
+Cloudflare Turnstile Çözücüsü: RapidAPI üzerinden otomatik token alma ve kullanma altyapısı.
 
-* 🛡️ **Bypass Engine v2.4:** Cloudflare Turnstile korumalarını yapay zeka destekli API katmanıyla sorunsuz ve hatasız bypass eder.
-* ⚙️ **Akıllı Config & State Management:** API anahtarlarınızı şifrelenmiş yerel `config.json` yapısında saklar; her oturumda tekrar giriş yapmanızı engeller.
-* 🔍 **Otomatik Sağlık Tikleme (Health Check):** Başlangıç anında API anahtarınızın kotasını ve geçerliliğini canlı olarak test eder.
-* 🎨 **Terminal UI / UX:** `Colorama` tabanlı özel renkli loglama altyapısı ile `LIVE`, `DEAD` ve hata durumlarını anlık ve şık bir şekilde raporlar.
-* 📊 **Detaylı Telemetri Raporu:** İşlem sonrasında kapsamlı başarı/başarısızlık istatistikleri ve konsol paneli sunar.
+Renkli Konsol Arayüzü (colorama): Başarılı (LIVE), başarısız (DEAD) ve hata durumları renkli ve düzenli loglarla takip edilir.
 
----
+Detaylı İstatistikler: Tarama sonrasında toplam taranan, live, dead ve hata sayılarını özetleyen rapor sunar.
 
-## 📦 Hızlı Kurulum (Tek Tıkla)
+🔧 Kurulum
 
-Projeyi çalıştırmak için uzun uzun komut yazmanıza gerek yok! Hazırladığımız otomasyon betiği her şeyi sizin için halleder.
+Python 3 sisteminizde kurulu olmalıdır.
 
-1. Depoyu klonlayın veya ZIP olarak indirin.
-2. Ana dizine **`combo.txt`** dosyanızı ekleyin (Format: `kullaniciadi:sifre`).
-3. **`install.bat`** dosyasına çift tıklayın. 
-   *(Betik otomatik olarak gerekli kütüphaneleri kuracak, API anahtarınızı isteyecek ve aracı başlatacaktır).*
+Gerekli kütüphaneleri yükleyin:
 
-Manuel kurmak isteyenler için:
-```bash
 pip install requests colorama
+
+
+Aynı dizine combo.txt adında bir dosya oluşturun ve her satıra şu formatta hesap bilgilerinizi ekleyin:
+
+kullanici1:sifre1
+kullanici2:sifre2
+
+
+🅾️ Ücretsiz API Anahtarı
+
+35 ücretsiz istek hakkı sunan API'yi buradan alabilirsiniz:
+👉 https://rapidapi.com/ttur5678/api/turnstile-bypass-api1/pricing
+
+Siteye üye olun.
+
+Ücretsiz planı seçin.
+
+Programı ilk kez çalıştırdığınızda konsolda istenen yere X-RapidAPI-Key değerinizi yapıştırın (anahtar otomatik olarak config.json dosyasına kaydedilecektir).
+
+▶️ Kullanım
+
+Aracı çalıştırmak için terminal veya komut istemcisine şunu yazın:
+
 python cr.py
+
+
+Başarılı girişler anlık olarak konsola yazdırılır ve live.txt dosyasına kaydedilir.
+
+⚠️ Uyarı
+
+Bu araç yalnızca eğitim ve araştırma amaçlı paylaşılmıştır.
+Herhangi bir siteye izinsiz giriş yapmak yasalara aykırıdır ve ciddi sonuçlar doğurabilir.
+Tüm sorumluluk kullanıcıya aittir.
+
+📌 Geliştirici: wezaxy
+
+🛠️ Katkılar ve pull request'ler memnuniyetle karşılanır.
+
+🤝 Katkıda Bulunmak: Sorunları ve geliştirme taleplerini göndermekten çekinmeyin!
+
+⭐ Destek: Bu aracı faydalı bulursanız, lütfen GitHub'da bir yıldız verin!
+
+Discord: wezaxy
+
+Destek Sunucusu: https://discord.gg/c44FB4PFcW
